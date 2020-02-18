@@ -21,7 +21,7 @@ const fetchUser = async () => {
 
 const Header =({ user, bookmarks })=>{
     return  (<h1> 
-                {user.fullName} ({bookmarks.length} Bookmark)
+                {user.fullName} ({bookmarks.length} Bookmarks)
             </h1>)
 }
 
