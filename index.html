@@ -1,6 +1,39 @@
 <html>
   <head>
 <style>
+    nav {
+        display: flex;
+        justify-content: space-around;
+        text-decoration:none;
+    }
+    form{
+        display:flex;
+        flex-direction:column;
+    }
+    form>*{
+      margin:5px;
+    }
+    #formContainer{
+        border: 1px black solid;
+        padding:10px;
+        margin: 10px 0px;
+    }
+    li{
+      display:flex;
+      justify-content:space-between;
+      margin: 10px 0px;
+    }
+    li>button{
+      width:75%;
+    }
+    .selected{
+      background-color:tomato;
+      color:white;
+    }
+    nav>*{
+      padding:10px;
+      text-decoration:none;
+    }
 
 </style>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script>
@@ -8,12 +41,9 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/5.0.0/react-router-dom.js'></script>
+    <script type="text/babel" src="app.js" defer></script>
   </head>
   <body>
     <div id='root'></div>
-    <script type='text/babel'>
-      const root = document.querySelector('#root');
-      ReactDOM.render(<hr />, root);
-    </script>
   </body>
 </html>
