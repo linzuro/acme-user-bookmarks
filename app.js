@@ -142,8 +142,9 @@ class App extends Component {
                 }
                 return accum
             },[])
-        history.push(`/${bookmark.category}`);
+        
         this.setState({ categories, bookmarks:updated});
+        history.push(`/${bookmark.category}`);
     }
 
 	async componentDidMount() {
